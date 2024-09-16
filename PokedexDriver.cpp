@@ -16,6 +16,7 @@
 #include <cctype>
 #include <ctime>
 #include "dataClass.h"
+#include "PokedexDriver.h"
 using namespace std;
 
 //Function for adding to the Pokedex
