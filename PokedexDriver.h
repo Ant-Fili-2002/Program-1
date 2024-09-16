@@ -4,3 +4,18 @@
 	Date:  	    09/11/2024
 	Purpose:    Header file for PokedexDriver.cpp
 *********************************************************************************/
+
+#ifndef POKEDEXDRIVER_H
+#define POKEDEXDRIVER_H
+
+#include <fstream>
+#include <iostream>
+#include <cstdlib>
+#include <string>
+#include <cctype>
+#include <ctime>
+
+using namespace std;
+
+int main();
+#endif
