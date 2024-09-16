@@ -8,6 +8,8 @@
 #ifdef STORAGECLASS_H
 #define STORAGECLASS_H
 
-include <iostream>
-include <fstream>
-include <string>
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std
