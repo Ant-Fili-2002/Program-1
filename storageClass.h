@@ -9,6 +9,6 @@
 #define STORAGECLASS_H
 
 
-using namespace std
+
 
 #endif
