@@ -74,6 +74,8 @@ void inputFromUser(){
     else if (userInput == 3){
         
     }
+    else if (userInput == 4){
+    }
     else {
         cout << "Sorry, that isn't an option" << endl;
     }
