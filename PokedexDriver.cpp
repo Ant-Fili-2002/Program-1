@@ -7,14 +7,6 @@
 *********************************************************************************/
 
 //Include
-#include <fstream>
-#include <iostream>
-#include <iostream>
-#include <cstdlib>
-#include <fstream>
-#include <string>
-#include <cctype>
-#include <ctime>
 #include "dataClass.h"
 #include "PokedexDriver.h"
 using namespace std;
