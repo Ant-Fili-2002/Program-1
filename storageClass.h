@@ -5,4 +5,5 @@
 	Purpose:  Header file for storageClass.cpp 
 *********************************************************************************/
 
-#ifdef STORAGECLASS
+#ifdef STORAGECLASS_H
+#define STORAGECLASS_H
