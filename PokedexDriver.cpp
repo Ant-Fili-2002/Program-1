@@ -9,6 +9,7 @@
 //Include
 #include "dataClass.h"
 #include "PokedexDriver.h"
+int global numberOfIds = 0;
 using namespace std;
 
 //Function for adding to the Pokedex
