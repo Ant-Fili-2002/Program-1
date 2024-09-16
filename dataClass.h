@@ -20,4 +20,16 @@ using namespace std;
 void addToPokedex();
 int main();
 
+class Data
+{
+	private: 
+		string studentName;
+		string favPokemon;
+		string favStarter;
+	public:
+		void addToPokedex();
+		void inputFromUser();
+		void displayPokedex();
+}
+
 #endif
