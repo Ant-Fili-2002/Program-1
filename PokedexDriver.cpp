@@ -6,7 +6,7 @@
                     functions can be tested, takes user input & ends naturally
 *********************************************************************************/
 
-//Include
+//Include Data
 #include "dataClass.h"
 #include "PokedexDriver.h"
 using namespace std;
