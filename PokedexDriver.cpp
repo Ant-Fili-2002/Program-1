@@ -30,11 +30,14 @@ void addToPokedex(){
 
 
     //Output the info
-    pokedexInfo << "ID Number: " << pokeInfo.idNumber << endl;
+    pokedexInfo << "ID Number: " << numIDs << endl;
     pokedexInfo << "Student Name: " << pokeInfo.studentName << endl;
     pokedexInfo << "Favorite Pokemon: " << pokeInfo.favPokemon << endl;
     pokedexInfo << "Favorite Starter: " << pokeInfo.favStarter << endl;
 
+    int IDArray[numIDs];
+    numIDs++;
+    return numIDs;
 }
 
 //Function for Displaying the Pokedex
