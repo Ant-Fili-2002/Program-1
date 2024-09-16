@@ -4,3 +4,5 @@
 	Date:  	  09/11/2024
 	Purpose:  Header file for storageClass.cpp 
 *********************************************************************************/
+
+#ifdef STORAGECLASS
