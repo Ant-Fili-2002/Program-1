@@ -1,7 +1,7 @@
 /********************************************************************************
-	Title: 		PokedexDriver.cpp
-	Authors:  	Anthony Filigenzi, Jocelyn Lee, Kylie Truong & Adam Yang
-	Date:  		09/11/2024
+	Title: 	    PokedexDriver.cpp
+	Authors:    Anthony Filigenzi, Jocelyn Lee, Kylie Truong & Adam Yang
+	Date:  	    09/11/2024
 	Purpose:    Contains full program flow, all classes used, all 
                     functions can be tested, takes user input & ends naturally
 *********************************************************************************/
