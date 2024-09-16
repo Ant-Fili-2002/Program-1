@@ -4,3 +4,11 @@
 	Date:  	  09/11/2024
 	Purpose:  Pointer to an array of pointers to the data in the data class. 
 *********************************************************************************/
+
+#include <iostream>
+#include <fstream>
+#include <string>
+
+using namespace std
+
+#endif
