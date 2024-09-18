@@ -89,6 +89,28 @@ void inputFromUser(){
 
 }
 
+void removeFromPokedex(){
+
+    fstream pokemonFile;
+    pokemonFile.open("pokedex.txt");
+
+    int removeNumber;
+    displayPokedex();
+    cout << "Which entry would you like removed? ";
+    cin >> removeNumber;
+
+    for (int = 0; i <= removeNumber; i++){
+        pokemonFile << "ID Number: " << i << endl;
+        pokemonFile << "Student Name: " << pokeInfo.studentName << endl;
+        pokemonFile << "Favorite Pokemon: " << pokeInfo.favPokemon << endl;
+        pokemonFile << "Favorite Starter: " << pokeInfo.favStarter << endl;
+
+    }
+
+
+
+}
+
 
 int main(){
     
