@@ -16,7 +16,7 @@
 #include <ctime>
 
 using namespace std;
-int numIDs = 0;
+int numIDs = 1;
 
 int main();
 #endif
