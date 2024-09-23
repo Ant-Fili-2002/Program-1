@@ -12,6 +12,23 @@
 
 using namespace std;
 
+//Count number of Pokemon in File
+void pokedexCount(){
+    string line;
+    int lineTotal = 1;
+
+
+    fstream pokedexCount;
+    pokedexCount.open("pokedex.txt");
+    while(!pokedexCount.eof()) {
+	getline(pokedexCount, line);
+	lineTotal ++;
+}
+    numIDs = (lineTotal / 4) + 1;
+
+
+}
+
 //Function for adding to the Pokedex
 void addToPokedex(){
     PokemonInfo pokeInfo;
