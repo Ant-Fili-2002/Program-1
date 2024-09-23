@@ -31,30 +31,11 @@ void pokedexCount(){
 
 //Function for adding to the Pokedex
 void addToPokedex(){
-    PokemonInfo pokeInfo;
-    //Find out the information of the student
-    cout << "Name of student: ";
-    cin >> pokeInfo.studentName;
-    cout << "Name of Favorite Pokemon: ";
-    cin >> pokeInfo.favPokemon;
-    cout << "Name of Favorite Starter Pokemon: ";
-    cin >> pokeInfo.favStarter;
-    cout << endl;
-
-    //Record it to Files
-    fstream pokedexInfo;
-    pokedexInfo.open("pokedex.txt",ios::app);
-
-
-    //Output the info
+   //Output the info
     pokedexInfo << "ID Number: " << numIDs << endl;
     pokedexInfo << "Student Name: " << pokeInfo.studentName << endl;
     pokedexInfo << "Favorite Pokemon: " << pokeInfo.favPokemon << endl;
     pokedexInfo << "Favorite Starter: " << pokeInfo.favStarter << endl;
-
-    int IDArray[numIDs];
-    numIDs++;
-    return numIDs;
 }
 
 //Function for Displaying the Pokedex
@@ -75,7 +56,7 @@ void inputFromUser(){
 
     //Loop
     do{
-    cout << "What would you like to do?" << endl;
+    cout << "What would you like to do?";
     cout << "1. Display PokeDex" << endl;
     cout << "2. Add to PokeDex" << endl;
     cout << "3. Remove from PokeDex" << endl;
