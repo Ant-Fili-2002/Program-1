@@ -32,4 +32,4 @@ int addToPokedex(int)
     int IDArray[numIDs];
     numIDs++;
     return numIDs;
-}
+};
