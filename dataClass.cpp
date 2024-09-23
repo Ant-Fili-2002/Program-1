@@ -5,3 +5,6 @@
 	Purpose: Stores the information of students, their favorite 
  	         Pokemon and favorite starter Pokemon.
 *************************************************************************/
+
+#include "dataClass.h"
+
