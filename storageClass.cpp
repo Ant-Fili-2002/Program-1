@@ -6,7 +6,7 @@
 *********************************************************************************/
 #include "storageClass.h"
 #include "dataClass.h"
-#include "PokedexDriver.h"
+#include "pokedexDriver.h"
 
 #define numPointers 4
 
