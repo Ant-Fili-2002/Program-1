@@ -30,6 +30,7 @@ class Data
 		void addToPokedex();
 		void inputFromUser();
 		void displayPokedex();
+		void pokedexCount();
 }
 
 #endif
