@@ -4,13 +4,8 @@
 	Date:  	  09/11/2024
 	Purpose:  Pointer to an array of pointers to the data in the data class. 
 *********************************************************************************/
-#include <iostream>
-#include <fstream>
-#include <string>
 #include "storageClass.h"
-#include <cctype>
-#include <ctime>
-#include "storageClass.h"
+#include "dataClass.h"
 #include "PokedexDriver.h"
 
 #define numPointers 4
