@@ -5,3 +5,9 @@
 	Purpose:  Median for PokedexDriver.cpp and storage 
 *********************************************************************************/
 #include "pokedexDriver.h"
+#include "otherClass.h"
+#include "dataClass.h"
+#include "storageClass.h"
+
+using namespace std;
+
