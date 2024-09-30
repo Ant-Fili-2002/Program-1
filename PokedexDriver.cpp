@@ -130,50 +130,6 @@ pokeDelete.open("pokedex.txt", std::ios::out);
 
 }
 
-
-void inputFromUser(){
-   
-    int userInput;
-    
-    //Loop
-    do{
-    cout << "What would you like to do?" << endl;
-    cout << "1. Display PokeDex" << endl;
-    cout << "2. Add to PokeDex" << endl;
-    cout << "3. Remove from PokeDex" << endl;
-    cout << "4. Exit" << endl;
-    cin >> userInput;
-    cin.ignore();
-
-    //if user wishes to display the PokeDex
-    if (userInput == 1){
-       displayPokedex();
-    }
-    //if user wihses to add to the PokeDex
-    else if (userInput == 2) {
-        addToPokedex();
-    }
-    //if user wishes to remove from PokeDex
-    else if (userInput == 3){
-        int pokeDelete;
-        displayPokedex();
-        cout << "Which pokemon entry would you like to delete?" << endl;
-        cin >> pokeDelete;
-        deletePokemon(numIDs, pokeDelete);
-        
-    }
-    else if (userInput == 4){
-    }
-    else {
-        cout << "Sorry, that isn't an option" << endl;
-    }
-    }while (userInput != 4);
-
-    cout << "Goodbye!" << endl;
-    cout << endl;
-
-}
-
 //****************************************************************************
 //                                 main()
 //
@@ -216,7 +172,11 @@ int main()
 	    break;
 	/*deletes Pokedex*/
 	case 3:
-	    deletePokedex();
+	    int pokeDelete;
+            displayPokedex();
+            cout << "Which pokemon entry would you like to delete?" << endl;
+        	cin >> pokeDelete;
+            deletePokemon(numIDs, pokeDelete);
 	    break;
 	/*Ends Program*/
 	case 4:
