@@ -9,6 +9,7 @@
 #include "dataClass.h"
 #include "storageClass.h"
 #include "pokedexDriver.h"
+#include "otherClass.h"
 
 //****************************************************************************
 //                                 addToPokedex()
