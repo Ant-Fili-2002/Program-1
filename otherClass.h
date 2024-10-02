@@ -19,7 +19,7 @@ private:
 	string favStarter;
 public:
 //Add constructor and destructor
-}
+};
 
 int main();
 void displayPokedex();
