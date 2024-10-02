@@ -8,8 +8,8 @@
 #define DATACLASS_H
 
 #include "PokedexDriver.h"
-#include "otherClass.h"
 #include "storageClass.h"
+#include "otherClass.h"
 
 
 using namespace std;
