@@ -7,8 +7,8 @@
 *************************************************************************/
 
 #include "dataClass.h"
+#include "PokedexDriver.h"
 #include "storageClass.h"
-#include "pokedexDriver.h"
 #include "otherClass.h"
 
 //****************************************************************************
