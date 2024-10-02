@@ -14,9 +14,9 @@
 #include <string>
 #include <cctype>
 #include <ctime>
-#include <dataClass.h>
-#include <storageClass.h>
-#include <otherClass.h>
+#include "dataClass.h"
+#include "storageClass.h"
+#include "otherClass.h"
 
 using namespace std;
 int numIDs = 1;
