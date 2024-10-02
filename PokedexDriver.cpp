@@ -44,36 +44,6 @@ void pokedexCount(){
 
 }
 
-
-//Function for adding to the Pokedex
-void addToPokedex(){
-    //Create array for Class
-    
-    //Find out the information of the student
-    cout << "Name of student: ";
-    cin >> pokeInfo.studentName[numIDs];
-    cout << "Name of Favorite Pokemon: ";
-    cin >> pokeInfo.favPokemon[numIDs];
-    cout << "Name of Favorite Starter Pokemon: ";
-    cin >> pokeInfo.favStarter[numIDs];
-    cout << endl;
-
-    //Record it to Files
-    fstream pokedexInfo;
-    pokedexInfo.open("pokedex.txt", std::ios_base::app);
-
-
-    //Output the info
-    pokedexInfo << "ID Number: " << numIDs << endl;
-    pokedexInfo << "Student Name: " << pokeInfo.studentName[numIDs] << endl;
-    pokedexInfo << "Favorite Pokemon: " << pokeInfo.favPokemon[numIDs] << endl;
-    pokedexInfo << "Favorite Starter: " << pokeInfo.favStarter[numIDs] << endl;
-
-    pokedexInfo.close();
-
-    numIDs++;
-}
-
 //Function for Displaying the Pokedex
 void displayPokedex(){
     ifstream displayText("pokedex.txt");
