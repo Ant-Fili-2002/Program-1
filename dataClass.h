@@ -14,6 +14,15 @@
 
 using namespace std;
 
+class Student{
+private:
+Info*
+
+public:
+
+}
+
+
 void addToPokedex();
 int main();
 
