@@ -7,9 +7,9 @@
 #ifndef OTHERCLASS_H
 #define OTHERCLASS_H
 
-#include "pokedexDriver.h"
-#include "storageClass.h"
 #include "dataClass.h"
+#include "PokedexDriver.h"
+#include "storageClass.h"
 
 using namespace std;
 
