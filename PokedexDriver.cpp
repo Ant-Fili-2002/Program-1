@@ -69,6 +69,7 @@ void displayPokedex(){
 //****************************************************************************
 int main()
 {
+    int userInput;
     int endProgram = 0;
 	
     //Make sure the pokedex file exists
