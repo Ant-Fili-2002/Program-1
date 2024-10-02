@@ -7,17 +7,13 @@
 #ifndef OTHERCLASS_H
 #define OTHERCLASS_H
 
-#include <fstream>
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <cctype>
-#include <ctime>
-#include <PokedexDriver.h>
+#include "pokedexDriver.h"
+#include "storageClass.h"
+#include "dataClass.h"
 
 using namespace std;
 
 int main();
-
+void displayPokedex();
 
 #endif
