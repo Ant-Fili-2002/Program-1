@@ -45,7 +45,7 @@ int main()
     cout << "4. Exit" << endl;
     	cin >> userInput;
 
-    switch(userInput)
+    switch(userInput){
 	/*Displays Pokedex*/
 	case 1:
 	    displayPokedex();
@@ -66,6 +66,7 @@ int main()
 	case 4:
 	    endProgram = 1;
 	    break;
+    }
     }while (endProgram != 1);
 
     cout << "See Ya Next Time!" << endl;
