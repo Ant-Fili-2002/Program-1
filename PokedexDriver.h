@@ -14,9 +14,17 @@
 #include <string>
 #include <cctype>
 #include <ctime>
+#include <dataClass.h>
+#include <storageClass.h>
+#include <otherClass.h>
 
 using namespace std;
 int numIDs = 1;
 
 int main();
+void pokedexCount();
+void addToPokedex();
+void displayPokedex();
+void deletePokemon(int,int);
+
 #endif
