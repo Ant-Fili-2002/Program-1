@@ -10,6 +10,13 @@
 #include "storageClass.h"
 #include "pokedexDriver.h"
 
+//****************************************************************************
+//                                 addToPokedex()
+//
+// task:          Collects the information of a Tech Student: name, favorite
+//		  pokemon & favorite starter pokemon.
+//
+//****************************************************************************
 int addToPokedex(int)
 {
     PokemonInfo pokeInfo;
@@ -34,6 +41,13 @@ int addToPokedex(int)
     return numIDs;
 };
 
+
+//*****************************************************************************
+//                                 deletePokemon(int, int)
+//
+// task:          Allows the user to delete the information of a Tech Student.
+//
+//*****************************************************************************
 void deletePokemon(int numPokemon, int pokemonChoice){
 fstream pokeDelete;
 pokeDelete.open("pokedex.txt", std::ios::out);
