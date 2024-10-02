@@ -74,7 +74,7 @@ pokeDelete.open("pokedex.txt", std::ios::out);
     pokeInfo.favStarter[i] = pokeInfo.favStarter[i + 1];
     }
     }
-    numIDS--;
+    numIDs--;
 
     for (int q = 1; q < numPokemon - 1; q++){
     pokeDelete << "ID Number: " << q << endl;
