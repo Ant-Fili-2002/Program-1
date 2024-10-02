@@ -19,10 +19,6 @@
 #include "otherClass.h"
 
 using namespace std;
-class PokedexInfo{
-
-};
-
 
 int numIDs = 1;
 
