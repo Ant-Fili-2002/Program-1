@@ -21,7 +21,7 @@
 using namespace std;
 class PokedexInfo{
 
-}
+};
 
 
 int numIDs = 1;
