@@ -8,7 +8,7 @@
 
 //Include
 #include "dataClass.h"
-#include "pokedexDriver.h"
+#include "PokedexDriver.h"
 #include "storageClass.h"
 #include "otherClass.h"
 
