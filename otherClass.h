@@ -13,6 +13,12 @@
 
 using namespace std;
 
+class Info {
+private:
+
+public:
+}
+
 int main();
 void displayPokedex();
 
