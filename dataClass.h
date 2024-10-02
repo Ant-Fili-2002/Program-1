@@ -16,7 +16,8 @@ using namespace std;
 
 class Student{
 private:
-Info*
+Info* favInfo;
+	string studentName;
 
 public:
 
