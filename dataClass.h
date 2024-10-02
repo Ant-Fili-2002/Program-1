@@ -7,13 +7,10 @@
 #ifndef DATACLASS_H
 #define DATACLASS_H
 
-#include <fstream>
-#include <iostream>
-#include <cstdlib>
-#include <string>
-#include <cctype>
-#include <ctime>
 #include "PokedexDriver.h"
+#include "otherClass.h"
+#include "storageClass.h"
+
 
 using namespace std;
 
