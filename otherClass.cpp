@@ -4,10 +4,10 @@
 	Date:  	  09/11/2024
 	Purpose:  Median for PokedexDriver.cpp and storage 
 *********************************************************************************/
-#include "pokedexDriver.h"
-#include "otherClass.h"
 #include "dataClass.h"
+#include "PokedexDriver.h"
 #include "storageClass.h"
+#include "otherClass.h"
 
 using namespace std;
 
