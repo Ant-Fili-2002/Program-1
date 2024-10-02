@@ -15,7 +15,9 @@ using namespace std;
 
 class Info {
 private:
-
+	string studentName;
+	string favPokemon;
+	string favStarter;
 public:
 }
 
