@@ -27,7 +27,7 @@ class PokedexInfo{
 int numIDs = 1;
 
 int main();
-void pokedexCount();
+int pokedexCount();
 void addToPokedex();
 void displayPokedex();
 void deletePokemon(int,int);
