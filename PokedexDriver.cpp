@@ -12,7 +12,7 @@
 
 
 int numIDS = 0;
-PokemonInfo pokeInfo;
+Pokedex pokeInfo;
 
 
 //Count how many entries there are on Pokedex
