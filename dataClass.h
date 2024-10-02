@@ -20,7 +20,7 @@ Info*
 
 public:
 
-}
+};
 
 
 void addToPokedex();
@@ -37,6 +37,6 @@ class Data
 		void inputFromUser();
 		void displayPokedex();
 		void pokedexCount();
-}
+};
 
 #endif
