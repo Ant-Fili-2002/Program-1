@@ -9,7 +9,8 @@
 #define STORAGECLASS_H
 
 #include "dataClass.h"
-
+#include "PokedexDriver.h"
+#include "otherClass.h"
 
 
 
