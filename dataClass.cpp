@@ -33,3 +33,41 @@ int addToPokedex(int)
     numIDs++;
     return numIDs;
 };
+
+void deletePokemon(int numPokemon, int pokemonChoice){
+fstream pokeDelete;
+pokeDelete.open("pokedex.txt", std::ios::out);
+
+//If it's the highest number
+    if (numPokemon == pokemonChoice){
+        string lineRandom;
+        //Loop until you find the right line
+        for (int j = 0; j < (numPokemon*4)-4; j++){
+            getline(pokeDelete, lineRandom);
+        }
+        pokeDelete << "";
+        pokeDelete << "";
+        pokeDelete << "";
+        pokeInfo.studentName[numPokemon] = "";
+        pokeInfo.favPokemon[numPokemon] = "";
+        pokeInfo.favStarter[numPokemon] = "";
+
+    }
+    else if (numPokemon > pokemonChoice){
+    for (int i = pokemonChoice; i < numPokemon; ++i){
+    pokeInfo.studentName[i] = pokeInfo.studentName[i + 1];
+    pokeInfo.favPokemon[i] = pokeInfo.favPokemon[i + 1];
+    pokeInfo.favStarter[i] = pokeInfo.favStarter[i + 1];
+    }
+    }
+    numIDS--;
+
+    for (int q = 1; q < numPokemon - 1; q++){
+    pokeDelete << "ID Number: " << q << endl;
+    pokeDelete << "Student Name: " << pokeInfo.studentName[q] << endl;
+    pokeDelete << "Favorite Pokemon: " << pokeInfo.favPokemon[q] << endl;
+    pokeDelete << "Favorite Starter: " << pokeInfo.favStarter[q] << endl;
+    }
+    pokeDelete.close();
+
+};
