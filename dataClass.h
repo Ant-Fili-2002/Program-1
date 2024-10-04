@@ -11,21 +11,17 @@
 #include "storageClass.h"
 #include "otherClass.h"
 
-
 using namespace std;
 
 class Student{
+    Info pokeInfo;
 private:
-Info* favInfo;
-	string studentName;
-
+	string studentName[maxPokemon];
 public:
-
-};
-
-
-void addToPokedex();
-int main();
+	friend class PokedexInfo;
+	void addToPokedex();
+	void deletePokemon(int, int);
+	
 
 
 #endif
