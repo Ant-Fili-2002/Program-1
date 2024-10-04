@@ -1,0 +1,127 @@
+Hello! And welcome to the TN Tech PokeDex!
+------------------------------------------
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+1
+NO ENTRIES FOUND
+
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+2
+A Wild Tech Student Appeared!
+QUICK! Add Them to Your Pokedex!
+Name of Student: Anthony
+Name of Favorite Pokemon: Pikachu
+Name of Favorite Starter: Turtwig
+
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+1
+
+ID Number: 1
+Student Name: Anthony
+Favorite Pokemon: Pikachu
+Favorite Starter: Turtwig
+
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+2
+A Wild Tech Student Appeared!
+QUICK! Add Them to Your Pokedex!
+Name of Student: Ash
+Name of Favorite Pokemon: Pikachu
+Name of Favorite Starter: Pikachu
+
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+1
+
+ID Number: 1
+Student Name: Anthony
+Favorite Pokemon: Pikachu
+Favorite Starter: Turtwig
+ID Number: 2
+Student Name: Ash
+Favorite Pokemon: Pikachu
+Favorite Starter: Pikachu
+
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+3
+
+ID Number: 1
+Student Name: Anthony
+Favorite Pokemon: Pikachu
+Favorite Starter: Turtwig
+ID Number: 2
+Student Name: Ash
+Favorite Pokemon: Pikachu
+Favorite Starter: Pikachu
+
+Which pokemon entry would you like to delete?
+1
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+1
+
+ID Number: 1
+Student Name: Ash
+Favorite Pokemon: Pikachu
+Favorite Starter: Pikachu
+
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+2
+A Wild Tech Student Appeared!
+QUICK! Add Them to Your Pokedex!
+Name of Student: Blah
+Name of Favorite Pokemon: Blah
+Name of Favorite Starter: Blah
+
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+1
+
+ID Number: 1
+Student Name: Ash
+Favorite Pokemon: Pikachu
+Favorite Starter: Pikachu
+ID Number: 2
+Student Name: Blah
+Favorite Pokemon: Blah
+Favorite Starter: Blah
+
+Welcome To The World of Pokemon! What Would You Like to Do?
+1. Display PokeDex
+2. Add to PokeDex
+3. Remove from PokeDex
+4. Exit
+4
+See Ya Next Time!
