@@ -16,8 +16,7 @@ using namespace std;
 //
 // task:          Shows User the pokemon from file
 //
-////****************************************************************************
-
+//****************************************************************************
 void displayPokedex(){
 fstream pokeDisplay;
 pokeDisplay.open("pokedex.txt");
