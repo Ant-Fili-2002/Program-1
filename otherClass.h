@@ -13,15 +13,13 @@
 
 using namespace std;
 
-class Info {
+class Info{
 private:
-	string favPokemon;
-	string favStarter;
+	string favPokemon[maxPokemon];
+    	string favStarter[maxPokemon];
 public:
-//Add constructor and destructor
-};
-
-int main();
-void displayPokedex();
+	friend class Student;
+	friend class PokedexInfo;
+	void displayPokedex();
 
 #endif
