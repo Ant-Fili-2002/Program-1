@@ -24,8 +24,7 @@ public:
 
 	friend void addToPokedex();
 	friend void deletePokemon(int, int);
-	friend void pokedexCount();
-	
+	friend void pokedexCount();	
 };
 
 #endif
