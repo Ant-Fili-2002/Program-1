@@ -10,13 +10,38 @@
 #include "storageClass.h"
 #include "otherClass.h"
 
-#define numPointers 4
-
 using namespace std;
+//******************************************************************
+//
+//                            pokeCount()
+//
+//   Purpose: keeps up with sudent IDs even after one is deleted
+//*******************************************************************
+void pokedexCount(){
+    fstream pokeCount;
+    pokeCount.open("pokedex.txt");
+    string line;
+    int lineTotal = 0;
+    int lineRead = 0;
+    string s;
+    int studentInfo = 0;
 
-string *array_name[pokeMax];
-string *array_poke[pokeMax];
-string *array_starter[pokeMax];
-string* (*array_name)[pokeMax] = &array_name;
-string* (*pArray_poke)[pokeMax] = &array_poke;
-string* (*pArray_starter)[pokeMax] = &array_starter;
+
+    fstream pokeCount;
+    pokeCount.open("pokedex.txt");
+    while(!pokeCount.eof()){
+    getline(pokeCount, line);
+    getline(pokeCount, studentPoke.studentName[studentInfo]);
+    getline(pokeCount, infoPoke.favPokemon[studentInfo]);
+    getline(pokeCount, infoPoke.favStarter[studentInfo]);
+    lineTotal ++;
+    studentInfo ++;
+    }
+
+    numIDs = lineTotal;
+
+
+
+    pokeCount.close();
+    
+};
