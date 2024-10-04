@@ -12,6 +12,20 @@
 #include "PokedexDriver.h"
 #include "otherClass.h"
 
+//Maximum number of entires is just like the first gen
+const int maxPokemon = 150;
+Student studentPoke;
+Info infoPoke;
 
+
+class PokedexInfo{
+	private: 
+	//Maximum number of entires is just like the first gen
+	const int maxPokemon = 150;
+	Student studentPoke;
+	Info infoPoke;
+	public:
+	void pokedexCount();
+}
 
 #endif
