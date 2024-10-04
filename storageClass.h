@@ -4,7 +4,6 @@
 	Date:  	  09/11/2024
 	Purpose:  Header file for storageClass.cpp 
 *********************************************************************************/
-
 #ifdef STORAGECLASS_H
 #define STORAGECLASS_H
 
@@ -25,7 +24,8 @@ class PokedexInfo{
 	Student studentPoke;
 	Info infoPoke;
 	public:
-	void pokedexCount();
-}
+	friend void addToPokedex();
+	friend void deletePokemon(int, int);
+};
 
 #endif
