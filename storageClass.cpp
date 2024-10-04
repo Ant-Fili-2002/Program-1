@@ -4,13 +4,15 @@
 	Date:  	  09/11/2024
 	Purpose:  Pointer to an array of pointers to the data in the data class. 
 *********************************************************************************/
-
 #include "dataClass.h"
 #include "PokedexDriver.h"
 #include "storageClass.h"
 #include "otherClass.h"
 
 using namespace std;
+Info pokeInfo2;
+Student studInfo;
+
 //******************************************************************
 //
 //                            pokeCount()
@@ -25,22 +27,16 @@ void pokedexCount(){
     int lineRead = 0;
     string s;
     int studentInfo = 0;
-
-
-    fstream pokeCount;
-    pokeCount.open("pokedex.txt");
     while(!pokeCount.eof()){
     getline(pokeCount, line);
-    getline(pokeCount, studentPoke.studentName[studentInfo]);
-    getline(pokeCount, infoPoke.favPokemon[studentInfo]);
-    getline(pokeCount, infoPoke.favStarter[studentInfo]);
+    getline(pokeCount, studInfo.studentName[studentInfo]);
+    getline(pokeCount, pokeInfo2.favPokemon[studentInfo]);
+    getline(pokeCount, pokeInfo2.favStarter[studentInfo]);
     lineTotal ++;
     studentInfo ++;
     }
 
     numIDs = lineTotal;
-
-
 
     pokeCount.close();
     
