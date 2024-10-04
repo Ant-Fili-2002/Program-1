@@ -16,12 +16,16 @@ using namespace std;
 class Student{
     Info pokeInfo;
 private:
-	string studentName[maxPokemon];
+	string studentName[150];
 public:
 	friend class PokedexInfo;
-	void addToPokedex();
-	void deletePokemon(int, int);
-	
+	friend void getPokemonInfo(int numGet);
+	friend void recordPokeInfo();
 
+	friend void addToPokedex();
+	friend void deletePokemon(int, int);
+	friend void pokedexCount();
+	
+};
 
 #endif
