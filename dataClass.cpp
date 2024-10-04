@@ -5,18 +5,22 @@
 	Purpose: Stores the information of students, their favorite 
  	         Pokemon and favorite starter Pokemon.
 *************************************************************************/
-
 #include "dataClass.h"
 #include "PokedexDriver.h"
 #include "storageClass.h"
 #include "otherClass.h"
 
-//*****************************************************************************
-//                                 getPokemonInfo(int)
+Student studentInfo;
+Info pokeInfo;
+
+//****************************************************************************
+//                                 addToPokedex()
 //
-// task:          Gathers the name of a student's favorite pokemon and starter
+// task:          Collects the information of a Tech Student: name, favorite
+//		  pokemon & favorite starter pokemon.
 //
-//*****************************************************************************
+//****************************************************************************
+
 void getPokemonInfo(int numInfo){
     fstream pokeCount;
     pokeCount.open("pokedex.txt");
@@ -44,6 +48,7 @@ void recordPokeInfo(){
     pokedexAdd.close();
 	};
 
+
 //****************************************************************************
 //                                 addToPokedex()
 //
@@ -60,6 +65,7 @@ void addToPokedex(){
 
     //Record it to file
     recordPokeInfo();
+
 };
 
 
