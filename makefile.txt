@@ -1,0 +1,19 @@
+OBJS	= pokedexDriver.o
+SOURCE	= pokedexDriver.cpp
+HEADER	= 
+OUT	= pokedex.out
+FLAGS	= -g -c -Wall
+LFLAGS	= 
+CC	= g++
+
+all:	pokedex.out
+
+pokedex.out: $(OBJS)
+	$(CC) -g $(OBJS) -o $(OUT) $(LFLAGS)
+
+pokedexDriver.o: pokedexDriver.cpp
+	$(CC) $(FLAGS) pokedexDriver.cpp 
+
+clean:
+	rm -f $(OBJS) $(OUT)
+
