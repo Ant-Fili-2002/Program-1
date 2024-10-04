@@ -11,11 +11,43 @@
 #include "storageClass.h"
 #include "otherClass.h"
 
+//*****************************************************************************
+//                                 getPokemonInfo(int)
+//
+// task:          Gathers the name of a student's favorite pokemon and starter
+//
+//*****************************************************************************
+void getPokemonInfo(int numInfo){
+    fstream pokeCount;
+    pokeCount.open("pokedex.txt");
+    getline(cin, studentInfo.studentName[numInfo]);
+    cout << "Name of Favorite Pokemon: ";
+    getline(cin, pokeInfo.favPokemon[numInfo]);
+    cout << "Name of Favorite Starter: ";
+    getline(cin, pokeInfo.favStarter[numInfo]);
+    };
+
+//*****************************************************************************
+//                                 recordPokeInfo()
+//
+// task:          Adds info into the program
+//
+//*****************************************************************************
+void recordPokeInfo(){
+	fstream pokedexAdd;
+    pokedexAdd.open("pokedex.txt", ios::app);
+    pokedexAdd << "ID Number: " << numIDs << endl;
+    pokedexAdd << "Student Name: " << studentInfo.studentName[numIDs] << endl;
+    pokedexAdd << "Favorite Pokemon: " << pokeInfo.favPokemon[numIDs] << endl;
+    pokedexAdd << "Favorite Starter: " << pokeInfo.favStarter[numIDs] << endl;
+    numIDs++;
+    pokedexAdd.close();
+	};
+
 //****************************************************************************
 //                                 addToPokedex()
 //
-// task:          Collects the information of a Tech Student: name, favorite
-//		  pokemon & favorite starter pokemon.
+// task:          Adds Info on Students.
 //
 //****************************************************************************
 void addToPokedex(){
@@ -23,22 +55,11 @@ void addToPokedex(){
         cout << "\nQUICK! Add Them to Your Pokedex!" << endl;
         cout << "Name of Student: ";
         cin.ignore();
-        getline(cin, studentName[numIDs]);
-        cout << "Name of Favorite Pokemon: ";
-        getline(cin, pokeInfo.favPokemon[numIDs]);
-        cout << "Name of Favorite Starter: ";
-        getline(cin, pokeInfo.favStarter[numIDs]);
+        getPokemonInfo(numIDs);
         cout << endl;
 
     //Record it to file
-    fstream pokedexAdd;
-    pokedexAdd.open("pokedex.txt", ios::app);
-    pokedexAdd << "ID Number: " << numIDs << endl;
-    pokedexAdd << "Student Name: " << studentName[numIDs] << endl;
-    pokedexAdd << "Favorite Pokemon: " << pokeInfo.favPokemon[numIDs] << endl;
-    pokedexAdd << "Favorite Starter: " << pokeInfo.favStarter[numIDs] << endl;
-    numIDs++;
-    pokedexAdd.close();
+    recordPokeInfo();
 };
 
 
@@ -62,25 +83,30 @@ pokeDelete.open("pokedex.txt", std::ios::out);
         pokeDelete << "";
         pokeDelete << "";
         pokeDelete << "";
-        studentName[numPokemon] = "";
+        studentInfo.studentName[numPokemon] = "";
         pokeInfo.favPokemon[numPokemon] = "";
         pokeInfo.favStarter[numPokemon] = "";
 
     }
     else if (numPokemon > choicePokemon){
 	    for (int i = choicePokemon; i < numPokemon; ++i){
-	    studentName[i] = studentName[i + 1];
+	    studentInfo.studentName[i] = studentInfo.studentName[i + 1];
 	    pokeInfo.favPokemon[i] = pokeInfo.favPokemon[i + 1];
 	    pokeInfo.favStarter[i] = pokeInfo.favStarter[i + 1];
 	    }
     }
     numIDs--;
 
+
     for (int q = 1; q < numPokemon - 1; q++){
     pokeDelete << "ID Number: " << q << endl;
-    pokeDelete << "Student Name: " << studentName[q] << endl;
+    pokeDelete << "Student Name: " << studentInfo.studentName[q] << endl;
     pokeDelete << "Favorite Pokemon: " << pokeInfo.favPokemon[q] << endl;
     pokeDelete << "Favorite Starter: " << pokeInfo.favStarter[q] << endl;
     }
     pokeDelete.close();
+    //Keep entry number from getting to zero
+    if (numIDs == 0){
+        numIDs++;
+    }
 };
