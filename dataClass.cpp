@@ -14,10 +14,9 @@ Student studentInfo;
 Info pokeInfo;
 
 //****************************************************************************
-//                                 addToPokedex()
+//                                 getPokemonInfo()
 //
-// task:          Collects the information of a Tech Student: name, favorite
-//		  pokemon & favorite starter pokemon.
+// task:          Collects the name of the favorite Pokemon and starter.
 //
 //****************************************************************************
 
