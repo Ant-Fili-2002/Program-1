@@ -18,28 +18,27 @@
 //		  pokemon & favorite starter pokemon.
 //
 //****************************************************************************
-int addToPokedex(int)
-{
-    PokemonInfo pokeInfo;
-    cout << "A Wild Tech Student Appeared!";
-    cout << "\nQUICK! Add Them to Your Pokedex!";
-	
-//Find out the information of the student
-    cout << "\nName of Student: ";
-    	cin >> pokeInfo.studentName;
-    cout << "\nName of Favorite Pokemon: ";
-    	cin >> pokeInfo.favPokemon;
-    cout << "\nName of Favorite Starter Pokemon: ";
-    	cin >> pokeInfo.favStarter;
-    cout << endl;
+void addToPokedex(){
+        cout << "A Wild Tech Student Appeared!";
+        cout << "\nQUICK! Add Them to Your Pokedex!" << endl;
+        cout << "Name of Student: ";
+        cin.ignore();
+        getline(cin, studentName[numIDs]);
+        cout << "Name of Favorite Pokemon: ";
+        getline(cin, pokeInfo.favPokemon[numIDs]);
+        cout << "Name of Favorite Starter: ";
+        getline(cin, pokeInfo.favStarter[numIDs]);
+        cout << endl;
 
-//Record it to Files
-    fstream pokedexInfo;
-    pokedexInfo.open("pokedex.txt",ios::app);
-
-    int IDArray[numIDs];
+    //Record it to file
+    fstream pokedexAdd;
+    pokedexAdd.open("pokedex.txt", ios::app);
+    pokedexAdd << "ID Number: " << numIDs << endl;
+    pokedexAdd << "Student Name: " << studentName[numIDs] << endl;
+    pokedexAdd << "Favorite Pokemon: " << pokeInfo.favPokemon[numIDs] << endl;
+    pokedexAdd << "Favorite Starter: " << pokeInfo.favStarter[numIDs] << endl;
     numIDs++;
-    return numIDs;
+    pokedexAdd.close();
 };
 
 
@@ -49,12 +48,12 @@ int addToPokedex(int)
 // task:          Allows the user to delete the information of a Tech Student.
 //
 //*****************************************************************************
-void deletePokemon(int numPokemon, int pokemonChoice){
-fstream pokeDelete;
+void deletePokemon(int numPokemon, int choicePokemon){
+   fstream pokeDelete;
 pokeDelete.open("pokedex.txt", std::ios::out);
 
 //If it's the highest number
-    if (numPokemon == pokemonChoice){
+    if (numPokemon == choicePokemon){
         string lineRandom;
         //Loop until you find the right line
         for (int j = 0; j < (numPokemon*4)-4; j++){
@@ -63,26 +62,25 @@ pokeDelete.open("pokedex.txt", std::ios::out);
         pokeDelete << "";
         pokeDelete << "";
         pokeDelete << "";
-        pokeInfo.studentName[numPokemon] = "";
+        studentName[numPokemon] = "";
         pokeInfo.favPokemon[numPokemon] = "";
         pokeInfo.favStarter[numPokemon] = "";
 
     }
-    else if (numPokemon > pokemonChoice){
-    for (int i = pokemonChoice; i < numPokemon; ++i){
-    pokeInfo.studentName[i] = pokeInfo.studentName[i + 1];
-    pokeInfo.favPokemon[i] = pokeInfo.favPokemon[i + 1];
-    pokeInfo.favStarter[i] = pokeInfo.favStarter[i + 1];
-    }
+    else if (numPokemon > choicePokemon){
+	    for (int i = choicePokemon; i < numPokemon; ++i){
+	    studentName[i] = studentName[i + 1];
+	    pokeInfo.favPokemon[i] = pokeInfo.favPokemon[i + 1];
+	    pokeInfo.favStarter[i] = pokeInfo.favStarter[i + 1];
+	    }
     }
     numIDs--;
 
     for (int q = 1; q < numPokemon - 1; q++){
     pokeDelete << "ID Number: " << q << endl;
-    pokeDelete << "Student Name: " << pokeInfo.studentName[q] << endl;
+    pokeDelete << "Student Name: " << studentName[q] << endl;
     pokeDelete << "Favorite Pokemon: " << pokeInfo.favPokemon[q] << endl;
     pokeDelete << "Favorite Starter: " << pokeInfo.favStarter[q] << endl;
     }
     pokeDelete.close();
-
 };
