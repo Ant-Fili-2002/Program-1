@@ -12,36 +12,25 @@
 using namespace std;
 
 //****************************************************************************
-//                                 pokedexCount()
+//                                 displayPokedex()
 //
-// task:          Counts how many entries there are in the Pokedex
+// task:          Shows User the pokemon from file
 //
-//****************************************************************************
+////****************************************************************************
 
-void pokedexCount(){
-    string line;
-    int lineTotal = 0;
-    int lineRead = 0;
-    string s;
-    int studentInfo = 0;
+void displayPokedex(){
+fstream pokeDisplay;
+pokeDisplay.open("pokedex.txt");
+int length;
 
-
-    fstream pokedexCount;
-    pokedexCount.open("pokedex.txt");
-    while(!pokedexCount.eof()){
-    getline(pokedexCount, line);
-    getline(pokedexCount, pokeInfo.studentName[studentInfo]);
-    getline(pokedexCount, pokeInfo.favPokemon[studentInfo]);
-    getline(pokedexCount, pokeInfo.favStarter[studentInfo]);
-    lineTotal ++;
-    studentInfo ++;
+ if (filesystem::file_size("pokedex.txt") == 0){
+	cout << "NO ENTRIES FOUND" << endl;
+ 	cout << endl;
+        pokeDisplay.close();
+}
+    else {
+        cout << endl;
+        cout << pokeDisplay.rdbuf();
+        cout << endl;
     }
-
-    numIDs = lineTotal;
-
-
-
-    pokedexCount.close();
-
-
 };
