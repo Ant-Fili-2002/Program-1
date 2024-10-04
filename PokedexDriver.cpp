@@ -5,12 +5,10 @@
 	Purpose:    Contains full program flow, all classes used, all 
                     functions can be tested, takes user input & ends naturally
 *********************************************************************************/
-
-//Include
-#include "dataClass.h"
+#include "dataClass.cpp"
 #include "PokedexDriver.h"
-#include "storageClass.h"
-#include "otherClass.h"
+#include "storageClass.cpp"
+#include "otherClass.cpp"
 
 
 //****************************************************************************
@@ -19,54 +17,58 @@
 // task:          Contains the user menu and calls onto the other functions 
 //                based off of the user input.
 //****************************************************************************
-int main(){
-//Variables
-int userInput;
-int pokeDelete;
-Student studentInfo;
-Info pokemonInfo;
-
-//Make sure there is a file
-    fstream pokedexCheck;
-
-    pokedexCheck.open("pokedex.txt");
-
-    if (!pokedexCheck){
-        ofstream pokedexInfo("pokedex.txt");
-    }
-    pokedexCheck.close();
-
-    //Introduce the User to the Program
-    cout << "-------------------------------" << endl;
-    cout << "Welcome to the TN Tech Pokedex!" << endl;
-    cout << "-------------------------------" << endl;
-//Do-while loop until User wishes to close
-do{
-    cout << "What would you like to do?" << endl;
-    cout << "1. Display pokedex" << endl;
-    cout << "2. Add to pokedex" << endl;
-    cout << "3. Remove from pokedex" << endl;
-    cout << "4. End program" << endl;
-    cin >> userInput;
+int main()
+{
+    int userInput;
+    int endProgram = 0;
+	
+    //Make sure the pokedex file exists
+    fstream pokeDexFile;
+    pokeDexFile.open("pokedex.txt");
     
-    if (userInput == 1){
-        pokemonInfo.displayPokedex();
-    }
-    else if (userInput == 2){
-        studentInfo.addToPokedex();
-    }
-    else if (userInput == 3){
-        pokemonInfo.displayPokedex();
-        cout << "Which entry would you like to delete? ";
-        cin >> pokeDelete;
-        studentInfo.deletePokemon(numIDs, pokeDelete);
-    }
-    else{
-        cout << "Sorry, I don't recognize that input" << endl;
-        break;
-    }
+    //Create it if it doesn't exist
+    if (!pokeDexFile)
+    {
+	ofstream pokedexInfo("pokedex.txt");
+    };
+	
+    /*Main Menu Options*/
+    cout << "Hello! And welcome to the TN Tech PokeDex!" << endl;
+    cout << "------------------------------------------" << endl;
+    do{
+    cout << "Welcome To The World of Pokemon! What Would You Like to Do?" << endl;
+    cout << "1. Display PokeDex" << endl;
+    cout << "2. Add to PokeDex" << endl;
+    cout << "3. Remove from PokeDex" << endl;
+    cout << "4. Exit" << endl;
+    	cin >> userInput;
 
+    switch(userInput){
+	/*Displays Pokedex*/
+	case 1:
+	    displayPokedex();
+	    break;
+	/*Adds New Student to Pokedex*/
+	case 2:
+	    addToPokedex();
+	    break;
+	/*deletes Pokedex*/
+	case 3:
+	    int pokeDelete;
+            displayPokedex();
+            cout << "Which pokemon entry would you like to delete?" << endl;
+        	cin >> pokeDelete;
+            deletePokemon(numIDs, pokeDelete);
+	    break;
+	/*Ends Program*/
+	case 4:
+	    endProgram = 1;
+	    break;
+    }
+    }while (endProgram != 1);
 
-}while (userInput != 4);
-	return 0;
+    cout << "See Ya Next Time!" << endl;
+    cout << endl;
+    /*Program 1 Complete :)*/
+    return 0;
 }
