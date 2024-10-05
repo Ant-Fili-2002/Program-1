@@ -1,9 +1,17 @@
 # Program 1
 ### Description: 
-This code is designed to store information on pokedex-like tool we shall call "TTUdex". It will store info on students and their favorite pokemon
+The idea behind our program was to create a “Pokedex” for Tech Students.
+
+This program needed functions that gathered information from the user, stored it into the Pokedex, printed off the data, and deleted past entrees.  
 
 ### Outline: 
 The program will utilize saving files on the computer which stores information from the user
 
 ### Classes: 
-Student info (name of student, name of favorite pokemon, and student's favorite starter)
+It contains three different class functions: 
+
+PokedexInfo: The storage class that contains the information from the data class. Holds the student ID that points to Student class. 
+
+Student: The data class that contains the students’ names. Holds information from the Info class. 
+
+Info: The other class that contains the student’s favorite Pokémon and starter Pokémon. 
